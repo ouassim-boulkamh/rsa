@@ -26,7 +26,7 @@ AES and SHA-256 implementations are not mine.
 ### RSA Key Generation and Message Encryption/Decryption:
 
 ```python
-from crsa.py import RSA, Key
+from crsa import RSA, Key
 
 # Generate RSA keys
 p, q, d, e, n, private_pem, public_pem = RSA.keygen(1024)
@@ -54,7 +54,7 @@ print(decrypted)
 ### Certificate Authority and Certificate Management:
 
 ```python
-from cert_auth.py import CertAuth, CertClient
+from cert_auth import CertAuth, CertClient
 import json
 
 # Create a Certificate Authority
